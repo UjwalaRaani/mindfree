@@ -69,11 +69,11 @@ function respondToMood(emoji) {
 // Challenge
 function startChallenge() {
   const challenges = [
-    "Sit straight and breathe slowly for 1 minute.",
+    "Text Your girlfriend whose name starts with U",
     "Clean something near you.",
     "Write down one good thing about today.",
     "Stretch for 60 seconds.",
-    "Smile at yourself right now 😊"
+    "Recall something about your favourite person and text her how you feel."
   ];
   const random = challenges[Math.floor(Math.random() * challenges.length)];
   document.getElementById("challengeOutput").innerHTML = `

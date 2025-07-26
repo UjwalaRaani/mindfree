@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindBreak</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="landingScreen" class="landing">
+  <img src="logo.jpg" alt="Mind Break Logo" class="logo" />
+  <h1 class="app-title">Mind Break</h1>
+</div>
+<div id="mainApp" style="display: none;">
+  <!-- Keep all your existing content here (buttons, outputArea, etc.) -->
+
+
+  <div class="container">
+    <h1>🧘‍♀️ MindBreak</h1>
+    <p class="tagline">Take a breath. Clear your mind. Recharge in 5 minutes.</p>
+
+    <div class="tab-menu">
+  <button class="tab-button" onclick="showTab('breathe')">🧘‍♀️ Breathe</button>
+  <button class="tab-button" onclick="showTab('affirmation')">🌼 Affirmation</button>
+  <button class="tab-button" onclick="showTab('mood')">😌 Mood</button>
+  <button class="tab-button" onclick="showTab('challenge')">💪 Challenge</button>
+</div>
+
+<div id="tabContent">
+
+  <div class="tab" id="breathe">
+    <div class="circle" id="circle"></div>
+    <p class="instruction" id="instruction">Click below to begin</p>
+    <button onclick="startBreathing()">Start Breathing</button>
+  </div>
+
+  <div class="tab" id="affirmation">
+    <button onclick="getAffirmation()">Get Affirmation</button>
+    <div id="affirmationOutput"></div>
+  </div>
+
+  <div class="tab" id="mood">
+    <button onclick="checkMood()">Mood Check-in</button>
+    <div id="moodOutput"></div>
+  </div>
+
+  <div class="tab" id="challenge">
+    <button onclick="startChallenge()">Start 1-Minute Challenge</button>
+    <div id="challengeOutput"></div>
+  </div>
+
+</div>
+
+
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

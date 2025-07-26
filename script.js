@@ -33,9 +33,9 @@ function startBreathing() {
 // Affirmation
 function getAffirmation() {
   const affirmations = [
-    "Take a breath, love. I’m right here.",
-    "I believe in you more than words can hold.",
-    "Even when you're tired, you're still my favorite human.",
+    "Take a breath.",
+    "people believe in you more than words can hold.",
+    "Even when you're tired, you're still someone's favorite human.",
     "You are not just working — you're building something incredible."
   ];
   const random = affirmations[Math.floor(Math.random() * affirmations.length)];
@@ -57,11 +57,11 @@ function checkMood() {
 
 function respondToMood(emoji) {
   const responses = {
-    "😊": "So glad you're feeling good! Might be done with your campaign right,Proud of you✨",
+    "😊": "So glad you're feeling good!Proud of you✨",
     "😐": "Neutral days are okay too 🌿",
-    "😞": "You're not alone 🤍 Main hoon na tere saath",
+    "😞": "You're not alone 🤍 ",
     "😤": "Deep breath, you’ve got this 💪",
-    "😴": "Rest is productive too 😌 Take rest nannaa"
+    "😴": "Rest is productive too 😌"
   };
   document.getElementById("moodOutput").innerHTML = `<div class="mood-response">${responses[emoji]}</div>`;
 }
@@ -69,11 +69,11 @@ function respondToMood(emoji) {
 // Challenge
 function startChallenge() {
   const challenges = [
-    "Text Your girlfriend whose name starts with U",
+    "Take a deep breathe",
     "Clean something near you.",
     "Write down one good thing about today.",
     "Stretch for 60 seconds.",
-    "Recall something about your favourite person and text her how you feel."
+    "Recall something about your day"
   ];
   const random = challenges[Math.floor(Math.random() * challenges.length)];
   document.getElementById("challengeOutput").innerHTML = `
